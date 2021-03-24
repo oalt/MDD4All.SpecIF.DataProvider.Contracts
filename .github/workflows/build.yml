@@ -38,7 +38,7 @@ jobs:
       run: dotnet restore ./src/${PROJECT_NAME}/${PROJECT_NAME}.csproj
 
     - name: Build
-      run: dotnet build --no-restore -c Release /p:Version=${VERSION} ./src/${PROJECT_NAME}/${PROJECT_NAME}.csproj
+      run: dotnet build --no-restore -c Release /p:Version=${VERSION} ./src/${PROJECT_NAME}.sln
 
     - name: Create nuget package(s)
       run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output ./Output ./src/${PROJECT_NAME}/${PROJECT_NAME}.csproj
