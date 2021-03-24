@@ -39,7 +39,7 @@ jobs:
       run: echo $VERSION
 
     - name: Restore dependencies
-      run: dotnet restore ./src/${PROJECT_NAME}/${PROJECT_NAME}.csproj
+      run: dotnet restore ./src/${PROJECT_NAME}.sln
 
     - name: Build
       run: dotnet build --no-restore -c Release /p:Version=${VERSION} ./src/${PROJECT_NAME}.sln
