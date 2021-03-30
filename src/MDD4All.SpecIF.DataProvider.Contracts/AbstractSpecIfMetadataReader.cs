@@ -11,15 +11,15 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
 	{
 		public ISpecIfServiceDescription DataSourceDescription { get; set; }
 
-		public List<EnumValue> GetEnumOptions(string dataTypeID)
+		public List<EnumerationValue> GetEnumOptions(string dataTypeID)
 		{
-			List<EnumValue> result = new List<EnumValue>();
+			List<EnumerationValue> result = new List<EnumerationValue>();
 
 			DataType dataType = GetDataTypeByKey(new Key(dataTypeID, null));
 
 			if (dataType != null && dataType.Values != null)
 			{
-				foreach (EnumValue value in dataType.Values)
+				foreach (EnumerationValue value in dataType.Values)
 				{
 					result.Add(value);
 				}

@@ -16,7 +16,7 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
 
         List<string> GetDataTypeTypes();
 
-        List<EnumValue> GetEnumOptions(string dataTypeID);
+        List<EnumerationValue> GetEnumOptions(string dataTypeID);
 
 		List<PropertyClass> GetAllPropertyClasses();
 
