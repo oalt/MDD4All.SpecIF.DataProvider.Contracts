@@ -10,23 +10,23 @@ namespace MDD4All.SpecIF.DataProvider.Contracts.DataModels
     public class SpecIfIdentifier
     {
 
-		public SpecIfIdentifier()
-		{
-			Id = System.Guid.NewGuid().ToString();
-		}
+        public SpecIfIdentifier()
+        {
+            Id = System.Guid.NewGuid().ToString();
+        }
 
-		[JsonIgnore]
-		[BsonId]
-		[BsonRepresentation(BsonType.String)]
-		public string Id
-		{
-			get; set;
-		}
+        [JsonIgnore]
+        [BsonId]
+        [BsonRepresentation(BsonType.String)]
+        public string Id
+        {
+            get; set;
+        }
 
-		[BsonElement("prefix")]
-		public string Prefix { get; set; }
+        [BsonElement("prefix")]
+        public string Prefix { get; set; }
 
-		[BsonElement("number")]
-		public long Number { get; set; }
+        [BsonElement("number")]
+        public long Number { get; set; }
     }
 }
