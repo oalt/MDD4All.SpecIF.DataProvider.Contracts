@@ -6,40 +6,40 @@ using System.Collections.Generic;
 
 namespace MDD4All.SpecIF.DataProvider.Contracts
 {
-	public interface ISpecIfMetadataReader : ISpecIfDataProviderBase
-	{
-		List<DataType> GetAllDataTypes();
+    public interface ISpecIfMetadataReader : ISpecIfDataProviderBase
+    {
+        List<DataType> GetAllDataTypes();
 
-		DataType GetDataTypeByKey(Key key);
-        
+        DataType GetDataTypeByKey(Key key);
+
         List<DataType> GetAllDataTypeRevisions(string dataTypeID);
 
         List<string> GetDataTypeTypes();
 
-        List<EnumValue> GetEnumOptions(string dataTypeID);
+        List<EnumerationValue> GetEnumOptions(string dataTypeID);
 
-		List<PropertyClass> GetAllPropertyClasses();
+        List<PropertyClass> GetAllPropertyClasses();
 
-		PropertyClass GetPropertyClassByKey(Key key);
+        PropertyClass GetPropertyClassByKey(Key key);
 
         List<PropertyClass> GetAllPropertyClassRevisions(string propertyClassID);
 
-		string GetLatestPropertyClassRevision(string propertyClassID);
+        string GetLatestPropertyClassRevision(string propertyClassID);
 
-		List<ResourceClass> GetAllResourceClasses();
+        List<ResourceClass> GetAllResourceClasses();
 
-		ResourceClass GetResourceClassByKey(Key key);
+        ResourceClass GetResourceClassByKey(Key key);
 
         List<ResourceClass> GetAllResourceClassRevisions(string resourceClassID);
 
-		string GetLatestResourceClassRevision(string resourceClassID);
+        string GetLatestResourceClassRevision(string resourceClassID);
 
         List<StatementClass> GetAllStatementClasses();
 
-		StatementClass GetStatementClassByKey(Key key);
+        StatementClass GetStatementClassByKey(Key key);
 
         List<StatementClass> GetAllStatementClassRevisions(string statementClassID);
 
         string GetLatestStatementClassRevision(string statementClassID);
-	}
+    }
 }

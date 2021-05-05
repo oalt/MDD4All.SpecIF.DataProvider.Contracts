@@ -6,36 +6,36 @@ using System.Collections.Generic;
 
 namespace MDD4All.SpecIF.DataProvider.Contracts
 {
-	public interface ISpecIfDataReader : ISpecIfDataProviderBase
-	{
+    public interface ISpecIfDataReader : ISpecIfDataProviderBase
+    {
         List<ProjectDescriptor> GetProjectDescriptions();
 
         SpecIF.DataModels.SpecIF GetProject(ISpecIfMetadataReader metadataReader,
-                                            string projectID, 
-                                            List<Key> hierarchyFilter = null, 
+                                            string projectID,
+                                            List<Key> hierarchyFilter = null,
                                             bool includeMetadata = true);
 
-		Resource GetResourceByKey(Key key);
+        Resource GetResourceByKey(Key key);
 
         List<Resource> GetAllResourceRevisions(string resourceID);
 
-		string GetLatestResourceRevisionForBranch(string resourceID, string branchName);
+        string GetLatestResourceRevisionForBranch(string resourceID, string branchName);
 
-		List<Node> GetAllHierarchies();
+        List<Node> GetAllHierarchies();
 
         List<Node> GetAllHierarchyRootNodes(string projectID = null);
 
-		Node GetHierarchyByKey(Key key);
-        
+        Node GetHierarchyByKey(Key key);
+
         List<Node> GetChildNodes(Key parentNodeKey);
 
         Node GetNodeByKey(Key key);
 
         Node GetParentNode(Key childNode);
 
-		string GetLatestHierarchyRevision(string hierarchyID);
+        string GetLatestHierarchyRevision(string hierarchyID);
 
-		Statement GetStatementByKey(Key key);
+        Statement GetStatementByKey(Key key);
 
         List<Statement> GetAllStatementRevisions(string statementID);
 
@@ -43,10 +43,10 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
 
         List<Statement> GetAllStatements();
 
-		List<Statement> GetAllStatementsForResource(Key resourceKey);
+        List<Statement> GetAllStatementsForResource(Key resourceKey);
 
-		List<Node> GetContainingHierarchyRoots(Key resourceKey);
+        List<Node> GetContainingHierarchyRoots(Key resourceKey);
 
-		byte[] GetFile(string filename);
-	}
+        byte[] GetFile(string filename);
+    }
 }

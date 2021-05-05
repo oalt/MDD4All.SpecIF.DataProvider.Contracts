@@ -5,32 +5,32 @@ using MDD4All.SpecIF.DataModels;
 
 namespace MDD4All.SpecIF.DataProvider.Contracts
 {
-	public interface ISpecIfDataWriter : ISpecIfDataProviderBase
-	{
-        void AddProject(ISpecIfMetadataWriter metadataWriter, 
-                        SpecIF.DataModels.SpecIF project, 
+    public interface ISpecIfDataWriter : ISpecIfDataProviderBase
+    {
+        void AddProject(ISpecIfMetadataWriter metadataWriter,
+                        SpecIF.DataModels.SpecIF project,
                         string integrationID = null);
 
-        void UpdateProject(ISpecIfMetadataWriter metadataWriter, 
+        void UpdateProject(ISpecIfMetadataWriter metadataWriter,
                            SpecIF.DataModels.SpecIF project);
 
         void DeleteProject(string projectID);
 
-		void AddResource(Resource resource);
+        void AddResource(Resource resource);
 
-		Resource SaveResource(Resource resource, string projectID = null);
+        Resource SaveResource(Resource resource, string projectID = null);
 
         Resource UpdateResource(Resource resource);
 
-		void AddHierarchy(Node hierarchy, string projectID = null);
+        void AddHierarchy(Node hierarchy, string projectID = null);
 
-		Node UpdateHierarchy(Node hierarchyToUpdate, string parentID = null, string predecessorID = null);
+        Node UpdateHierarchy(Node hierarchyToUpdate, string parentID = null, string predecessorID = null);
 
-		void AddStatement(Statement statement);
+        void AddStatement(Statement statement);
 
-		Statement SaveStatement(Statement statement, string projectID = null);
+        Statement SaveStatement(Statement statement, string projectID = null);
 
-		void AddNodeAsFirstChild(string parentNodeID, Node newNode);
+        void AddNodeAsFirstChild(string parentNodeID, Node newNode);
 
         /// <summary>
         /// Add node as predecessor of existing node in the same hierarchy level.
@@ -43,9 +43,9 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
 
         void DeleteNode(string nodeID);
 
-		void InitializeIdentificators();
+        void InitializeIdentificators();
 
-		void SaveIdentificators();
+        void SaveIdentificators();
 
-	}
+    }
 }
