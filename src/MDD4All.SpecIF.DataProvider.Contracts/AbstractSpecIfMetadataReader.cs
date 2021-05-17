@@ -17,9 +17,9 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
 
             DataType dataType = GetDataTypeByKey(new Key(dataTypeID, null));
 
-            if (dataType != null && dataType.Values != null)
+            if (dataType != null && dataType.Enumeration != null)
             {
-                foreach (EnumerationValue value in dataType.Values)
+                foreach (EnumerationValue value in dataType.Enumeration)
                 {
                     result.Add(value);
                 }
@@ -32,7 +32,7 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
         {
             List<string> result = new List<string>()
             {
-                "xs:boolean", "xs:integer", "xs:double", "xs:dateTime", "xs:string", "xhtml" , "xs:enumeration"
+                "xs:boolean", "xs:integer", "xs:double", "xs:dateTime", "xs:string", "xs:anyURL"
             };
 
             return result;
