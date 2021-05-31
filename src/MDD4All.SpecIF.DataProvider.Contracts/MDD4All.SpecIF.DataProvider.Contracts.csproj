@@ -23,7 +23,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="MDD4All.SpecIF.DataModels" Version="4.0.0.25" />
+      <PackageReference Include="MDD4All.SpecIF.DataModels" Version="5.0.0.29" />
     </ItemGroup>
 
 </Project>
