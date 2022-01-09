@@ -13,6 +13,8 @@
         <Description>SpecIF data provider contract definitions</Description>
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>MDD4All_Github.snk</AssemblyOriginatorKeyFile>
+        <AssemblyName>MDD4All.SpecIF.DataProvider.Contracts</AssemblyName>
+        <RootNamespace>MDD4All.SpecIF.DataProvider.Contracts</RootNamespace>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
