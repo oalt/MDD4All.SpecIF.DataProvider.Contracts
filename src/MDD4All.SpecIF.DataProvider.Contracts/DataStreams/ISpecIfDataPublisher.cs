@@ -5,6 +5,6 @@ namespace MDD4All.SpecIF.DataProvider.Contracts.DataStreams
 {
     public interface ISpecIfDataPublisher
     {
-        void PublishData(List<Resource> specIfdata);
+        void PublishData(List<Resource> specIfdata, Dictionary<string, string> metadata = null);
     }
 }
