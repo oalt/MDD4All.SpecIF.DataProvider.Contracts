@@ -2,12 +2,12 @@
 {
     public interface ISpecIfDataProviderFactory
     {
-        ISpecIfMetadataReader GetSpecIfMetadataReader();
+        ISpecIfMetadataReader MetadataReader { get; set; }
+        
+        ISpecIfMetadataWriter MetadataWriter { get; set; }
 
-        ISpecIfMetadataWriter GetSpecIfMetadataWriter();
+        ISpecIfDataReader DataReader { get; set; }   
 
-        ISpecIfDataReader GetSpecIfDataReader();
-
-        ISpecIfDataWriter GetSpecIfDataWriter();
+        ISpecIfDataWriter DataWriter { get; set; }   
     }
 }
