@@ -148,7 +148,6 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
         public abstract void AddHierarchy(Node hierarchy, string projectID = null);
         public abstract void AddResource(Resource resource);
         public abstract void AddStatement(Statement statement);
-        protected abstract IdentifiableElement GetItemWithLatestRevisionInBranch<T>(string id, string branch);
         public abstract void AddNodeAsFirstChild(string parentNodeID, Node newNode);
         public abstract void AddNodeAsPredecessor(string predecessorID, Node newNode);
         public abstract void MoveNode(string nodeID, string newParentID, string newSiblingId);
