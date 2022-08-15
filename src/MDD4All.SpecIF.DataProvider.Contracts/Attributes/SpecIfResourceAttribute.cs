@@ -2,7 +2,7 @@
 
 namespace MDD4All.SpecIF.DataProvider.Contracts.Attributes
 {
-    [AttributeUsage(AttributeTargets.Property)]
+    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Method)]
     public class SpecIfResourceAttribute : Attribute
     {
         private string _resourceClassTitle = "";
