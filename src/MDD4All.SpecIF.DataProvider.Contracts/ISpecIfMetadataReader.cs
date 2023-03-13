@@ -41,5 +41,7 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
         List<StatementClass> GetAllStatementClassRevisions(string statementClassID);
 
         string GetLatestStatementClassRevision(string statementClassID);
+
+        void NotifyMetadataChanged();
     }
 }
