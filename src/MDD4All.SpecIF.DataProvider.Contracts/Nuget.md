@@ -1,0 +1,1 @@
+﻿Data provider contracts (interface definitions) to define CRUD operations on SpecIF data.
