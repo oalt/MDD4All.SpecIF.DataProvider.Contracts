@@ -41,7 +41,7 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
 
         void MoveNode(string nodeID, string newParentID, string newSiblingId);
 
-        void DeleteNode(string nodeID);
+        void DeleteNode(string nodeID, string projectID);
 
         void InitializeIdentificators();
 
