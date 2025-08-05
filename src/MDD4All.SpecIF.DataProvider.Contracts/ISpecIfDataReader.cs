@@ -48,5 +48,7 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
         List<Node> GetContainingHierarchyRoots(Key resourceKey);
 
         byte[] GetFile(string filename);
+
+        string GetProjectIDFromNodeID(string nodeID);
     }
 }
