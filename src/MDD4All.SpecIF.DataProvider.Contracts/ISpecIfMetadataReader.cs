@@ -2,6 +2,7 @@
  * Copyright (c) MDD4All.de, Dr. Oliver Alt
  */
 using MDD4All.SpecIF.DataModels;
+using MDD4All.SpecIF.DataModels.DiagramMetadata;
 using System.Collections.Generic;
 
 namespace MDD4All.SpecIF.DataProvider.Contracts
@@ -43,5 +44,12 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
         string GetLatestStatementClassRevision(string statementClassID);
 
         void NotifyMetadataChanged();
+
+        List<DiagramObjectClass> GetAllDiagramObjectClasses();
+        
+        DiagramObjectClass GetDiagramObjectClassByKey(Key key);
+        
+        List<DiagramObjectClass> GetAllDiagramObjectClassesRevisions(string classID);
+
     }
 }

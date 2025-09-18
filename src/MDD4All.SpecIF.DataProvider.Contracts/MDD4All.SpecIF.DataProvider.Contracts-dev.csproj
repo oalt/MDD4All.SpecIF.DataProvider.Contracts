@@ -25,6 +25,7 @@
 
     <ItemGroup>
       <ProjectReference Include="$(SolutionDir)\MDD4All.SpecIF.DataModels\src\MDD4All.SpecIF.DataModels\MDD4All.SpecIF.DataModels-dev.csproj" />
+      <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataModels.DiagramMetadata\src\MDD4All.SpecIF.DataModels.DiagramMetadata\MDD4All.SpecIF.DataModels.DiagramMetadata-dev.csproj" />
     </ItemGroup>
 
 </Project>
