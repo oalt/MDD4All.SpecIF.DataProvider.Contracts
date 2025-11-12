@@ -25,7 +25,7 @@ namespace MDD4All.SpecIF.DataProvider.Contracts
 
         List<Node> GetAllHierarchyRootNodes(string projectID = null);
 
-        Node GetHierarchyByKey(Key key);
+        Node GetHierarchyByKey(Key key, string projectID = null);
 
         List<Node> GetChildNodes(Key parentNodeKey);
 
